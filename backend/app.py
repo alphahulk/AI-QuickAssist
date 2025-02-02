@@ -1,15 +1,4 @@
-# Project Folder Structure
-# ai-popup-extension/
-# ├── backend/
-# │   ├── app.py  # FastAPI Backend
-# │   ├── requirements.txt  # Dependencies
-# ├── extension/
-# │   ├── content.js  # Handles text selection
-# │   ├── background.js  # Communicates with popup
-# │   ├── popup.js  # Handles UI logic
-# │   ├── popup.html  # UI for the popup
-# │   ├── manifest.json  # Chrome Extension Config
-# ├── README.md
+
 
 # backend/app.py - FastAPI Backend using Claude API
 
@@ -21,8 +10,8 @@ import os
 app = FastAPI()
 
 # Claude API Key (Set this in environment variables)
-CLAUDE_API_KEY = os.getenv("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")
-CLAUDE_API_URL = "https://api.anthropic.com/v1/messages"
+CLAUDE_API_KEY = os.getenv("Set this in environment variables")
+CLAUDE_API_URL = "nil"
 
 class QueryRequest(BaseModel):
     text: str
