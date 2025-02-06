@@ -10,9 +10,9 @@ import os
 app = FastAPI()
 
 # Claude API Key (Set this in environment variables)
-CLAUDE_API_KEY = os.getenv("Set this in environment variables")
+CLAUDE_API_KEY = os.getenv("Set this in environment variable to test this extension")
 CLAUDE_API_URL = "nil"
-
+# test
 class QueryRequest(BaseModel):
     text: str
 
